@@ -1,0 +1,27 @@
+{
+  "name": "date-confert",
+  "version": "1.0.0",
+  "description": "date,confert,interactive",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dwaysetya/fgo24-node-dateconvert.git"
+  },
+  "keywords": [
+    "dateconvert"
+  ],
+  "author": "dway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dwaysetya/fgo24-node-dateconvert/issues"
+  },
+  "homepage": "https://github.com/Dwaysetya/fgo24-node-dateconvert#readme",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
