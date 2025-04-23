@@ -9,27 +9,26 @@ export default defineConfig([
     extends: ["js/recommended"],
   },
   { files: ["**/*.{js,mjs,cjs}"], languageOptions: { globals: globals.node } },
-  {plugins: {
-    '@stylistic/js': stylisticJs
+  {
+    plugins: {
+      "@stylistic/js": stylisticJs,
+    },
   },
-},
   {
     rules: {
       semi: ["error", "always"],
-      indent : [
-        "error",
-        "tab"
-    ],
-    indent: ['error', 2],
-      '@stylistic/js/indent': ['error', 2],
+      indent: ["error", "tab"],
+      eqeqeq: ["error", "always"],
+      camelcase: ["error"],
+      indent: ["error", 2],
+      "@stylistic/js/indent": ["error", 2],
     },
     linterOptions: {
-			reportUnusedInlineConfigs: "error",
-		},
+      reportUnusedInlineConfigs: "error",
+    },
     languageOptions: {
-			ecmaVersion: 5,
-			sourceType: "script",
-		},
-    
+      ecmaVersion: 5,
+      sourceType: "script",
+    },
   },
 ]);
