@@ -15,6 +15,19 @@ function menuUtama() {
     rl.close();
   });
 }
+
+function updateDate(tanggal) {
+  const valid = moment(tanggal, "DD-MM-YYYY", true).isValid();
+
+  if (valid) {
+    const hasilFormat = moment(tanggal, "DD-MM-YYYY").format("DD/MM/YYYY");
+    console.log(`Format benar: ${hasilFormat}`);
+  } else {
+    console.log("Format tanggal salah. Gunakan format DD-MM-YYYY.");
+  }
+
+  rl.close();
+}
 menuUtama();
 
 const dateManual = (date) => {
@@ -48,5 +61,3 @@ const dateManual = (date) => {
     }
   }
 };
-
-
